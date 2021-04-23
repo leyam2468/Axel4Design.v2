@@ -1,0 +1,20 @@
+{
+  "name": "axel4design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw:bulid": "tailwindcss build src/css/styles.css -o public/css/main.css",
+    "tw:prod": "NODE_ENV=production tailwindcss build src/styles.css -o public/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.10",
+    "tailwindcss": "^2.1.1",
+    "webpack": "^5.35.0",
+    "webpack-cli": "^4.6.0"
+  }
+}
