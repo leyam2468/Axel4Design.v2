@@ -19,6 +19,9 @@ module.exports = {
 					0.9: 'rgba(0, 0, 0, 0.9)',
 				},
 			},
+			spacing: {
+				42: '10.5rem',
+			},
 		},
 	},
 	variants: {
