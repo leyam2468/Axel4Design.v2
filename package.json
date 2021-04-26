@@ -6,7 +6,7 @@
   "scripts": {
 
     "tw:bulid": "tailwindcss build src/index.css -o public/css/main.css",
-    "tw:prod": "NODE_ENV=production tailwindcss build src/styles.css -o public/main.css"
+    "tw:prod": "NODE_ENV=production tailwindcss build src/index.css -o public/main.css"
   },
   "keywords": [],
   "author": "",
