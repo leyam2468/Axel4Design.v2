@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.Axel {
+	color: red;
+}
+.Axel2 {
+	background-color: gray;
+}
