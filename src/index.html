@@ -6,17 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#000" />
 		<title>Home-Axel4Design</title>
-
-		<!-- <link rel="stylesheet" href="css/main.css" /> -->
-		<!-- scripts -->
-		<!-- <script src="js/main.js" defer></script> -->
 	</head>
 	<body class="dark:bg-darkmode">
 		<!-- Navbar -->
-		<nav class="bg-gray-200 dark:bg-gray-500 shadow-xl">
+		<nav class="bg-gray-200 dark:bg-black-1 shadow-xl">
 			<!-- Nav Container -->
 			<div
-				class="m-auto max-w-6xl px-2 py-1 bg-gray-200 dark:bg-gray-500 flex justify-between dark:text-white-1"
+				class="m-auto max-w-6xl px-2 py-1 bg-gray-200 dark:bg-black-1 flex justify-between dark:text-white-1"
 			>
 				<!-- left Nav Logo & Menu -->
 				<div class="flex items-center md:space-x-3">
@@ -284,7 +280,7 @@
 		<!-- Side Nave WebSites-->
 		<div
 			id="side-nav-web"
-			class="bg-white-0.5 z-50 absolute top-0 left-0 h-screen w-80 backdrop-filter backdrop-blur-md transform -translate-x-full transition duration-500 ease-in-out shadow-inner"
+			class="bg-white-0.5 dark:bg-black-0.8 z-50 absolute top-0 left-0 h-screen w-80 backdrop-filter backdrop-blur-md transform -translate-x-full transition duration-500 ease-in-out"
 		>
 			<!-- Logo -->
 			<div
@@ -333,11 +329,10 @@
 				</button>
 			</div>
 			<!-- Nav mune -->
-			<nav class="space-y-3 mt-2 p-4 text-lg font-bold uppercase">
-				<a
-					href=""
-					class="flex items-center py-2.5 px-4 rounded bg-red-700 shadow-md"
-				>
+			<nav
+				class="dark:text-gray-100 space-y-3 mt-2 p-4 text-lg font-bold uppercase"
+			>
+				<a href="" class="sideNavMenu bg-black-0.3 dark:bg-gray-500">
 					<svg
 						class="w-6 h-6 mx-2"
 						fill="none"
@@ -353,10 +348,7 @@
 						></path></svg
 					>Home</a
 				>
-				<a
-					href=""
-					class="flex items-center py-2.5 px-4 rounded hover:bg-black-0.3"
-				>
+				<a href="" class="sideNavMenu">
 					<svg
 						class="w-6 h-6 mx-2"
 						fill="none"
@@ -371,10 +363,7 @@
 							d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
 						></path></svg
 					>About</a
-				><a
-					href=""
-					class="flex items-center py-2.5 px-4 rounded hover:bg-black-0.3"
-				>
+				><a href="" class="sideNavMenu">
 					<svg
 						class="w-6 h-6 mx-2"
 						fill="none"
@@ -389,10 +378,7 @@
 							d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
 						></path></svg
 					>Contacts</a
-				><a
-					href=""
-					class="flex items-center py-2.5 px-4 rounded hover:bg-black-0.3"
-				>
+				><a href="" class="sideNavMenu">
 					<svg
 						class="w-6 h-6 mx-2"
 						fill="none"
@@ -407,10 +393,7 @@
 							d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
 						></path></svg
 					>Portfolio</a
-				><a
-					href=""
-					class="flex items-center py-2.5 px-4 rounded hover:bg-black-0.3"
-				>
+				><a href="" class="sideNavMenu">
 					<svg
 						class="w-6 h-6 mx-2"
 						fill="none"
@@ -431,7 +414,7 @@
 		<!-- Side Nave WepApps-->
 		<div
 			id="side-nav-apps"
-			class="bg-white-1-0.5 dark:bg-black-0.8 z-50 absolute top-0 left-0 h-screen w-80 backdrop-filter backdrop-blur-md transform -translate-x-full transition duration-500 ease-in-out"
+			class="bg-white-0.5 dark:bg-black-0.8 z-50 absolute top-0 left-0 h-screen w-80 backdrop-filter backdrop-blur-md transform -translate-x-full transition duration-500 ease-in-out"
 		>
 			<!-- Logo -->
 			<div
@@ -483,10 +466,7 @@
 			<nav
 				class="space-y-3 mt-2 p-4 text-lg font-bold uppercase dark:text-gray-100"
 			>
-				<a
-					href=""
-					class="flex items-center py-2.5 px-4 rounded bg-black-0.3 dark:bg-white-1-0.4 shadow-md"
-				>
+				<a href="" class="sideNavMenu bg-black-0.3 dark:bg-gray-500">
 					<svg
 						class="w-6 h-6 mx-2"
 						fill="none"
@@ -502,10 +482,7 @@
 						></path></svg
 					>Home</a
 				>
-				<a
-					href=""
-					class="flex items-center py-2.5 px-4 rounded hover:bg-black-0.3"
-				>
+				<a href="" class="sideNavMenu">
 					<svg
 						class="w-6 h-6 mx-2"
 						fill="none"
@@ -521,10 +498,7 @@
 						></path></svg
 					>About</a
 				>
-				<a
-					href=""
-					class="flex items-center py-2.5 px-4 rounded hover:bg-black-0.3"
-				>
+				<a href="" class="sideNavMenu">
 					<svg
 						class="w-6 h-6 mx-2"
 						fill="none"
@@ -540,10 +514,7 @@
 						></path></svg
 					>Contacts</a
 				>
-				<a
-					href=""
-					class="flex items-center py-2.5 px-4 rounded hover:bg-black-0.3"
-				>
+				<a href="" class="sideNavMenu">
 					<svg
 						class="w-6 h-6 mx-2"
 						fill="none"
@@ -559,10 +530,7 @@
 						></path></svg
 					>Portfolio</a
 				>
-				<a
-					href=""
-					class="flex items-center py-2.5 px-4 rounded hover:bg-black-0.3"
-				>
+				<a href="" class="sideNavMenu">
 					<svg
 						class="w-6 h-6 mx-2"
 						fill="none"
@@ -609,12 +577,12 @@
 
 				<div
 					id="helper-spans"
-					class="w-full h-full z-10 absolute rounded-full cursor-pointer bg-red-500 shadow-lg"
+					class="w-full h-full z-10 absolute rounded-full cursor-pointer bg-red-700 shadow-lg"
 				>
 					<!-- darkmode	 -->
 					<span
 						id="darkmode"
-						class="w-12 h-12 rounded-full bg-red-500 flex items-center justify-center absolute transform transition-all duration-500 ease-in-out hover:bg-red-600 hover:scale-110"
+						class="w-12 h-12 rounded-full bg-red-700 flex items-center justify-center absolute transform transition-all duration-500 ease-in-out hover:bg-red-800 hover:scale-110"
 					>
 						<svg
 							class="w-6 h-6"
@@ -633,12 +601,12 @@
 					</span>
 
 					<span
-						class="w-12 h-12 rounded-full bg-red-500 flex items-center justify-center absolute transform transition-all duration-500 ease-in-out hover:bg-red-600 hover:scale-110"
+						class="w-12 h-12 rounded-full bg-red-700 flex items-center justify-center absolute transform transition-all duration-500 ease-in-out hover:bg-red-800 hover:scale-110"
 						>2</span
 					>
 
 					<span
-						class="w-12 h-12 rounded-full bg-red-500 flex items-center justify-center absolute transform transition-all duration-500 ease-in-out hover:bg-red-600 hover:scale-110"
+						class="w-12 h-12 rounded-full bg-red-700 flex items-center justify-center absolute transform transition-all duration-500 ease-in-out hover:bg-red-800 hover:scale-110"
 						>3</span
 					>
 				</div>
@@ -667,7 +635,7 @@
 						Web Developer.
 					</h3>
 					<!-- divider -->
-					<div class="w-full md:w-4/5 h-px bg-red-400"></div>
+					<div class="w-full md:w-4/5 h-px bg-red-700"></div>
 					<!-- Social Icons -->
 					<div class="flex space-x-2">
 						<!-- Facebook -->
@@ -772,7 +740,7 @@
 					<div class="flex space-x-3">
 						<a
 							href=""
-							class="flex px-4 py-2 text-white-1 rounded shadow-2xl bg-red-500 hover:bg-red-800 transition duration-200"
+							class="flex px-4 py-2 text-white-1 rounded shadow-2xl bg-red-700 hover:bg-red-800 transition duration-200"
 						>
 							<svg
 								class="w-6 h-6"
@@ -792,7 +760,7 @@
 						>
 						<a
 							href=""
-							class="flex px-4 py-2 text-white-1 rounded shadow-2xl bg-red-500 hover:bg-red-800 transition duration-200"
+							class="flex px-4 py-2 text-white-1 rounded shadow-2xl bg-red-700 hover:bg-red-800 transition duration-200"
 							><svg
 								class="w-6 h-6"
 								fill="none"
