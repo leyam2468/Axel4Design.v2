@@ -1,5 +1,9 @@
 import '../css/style.scss';
 
+import '../images/page_icon.png';
+import '../images/1.jpg';
+import '../images/4005523.svg';
+
 const mobileMenuBTN = document.querySelector('#mobile-menu-btn');
 const closeMenuBTN = document.querySelector('#close-menu-btn');
 const mobileMenu = document.querySelector('#mobile-menu');
