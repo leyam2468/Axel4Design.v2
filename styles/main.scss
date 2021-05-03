@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sideNavMenu {
+	@apply flex items-center py-2.5 px-4 rounded hover:bg-black-0.3 dark:hover:bg-gray-500;
+}
+.banner {
+	background: url(/img/4005523.svg);
+	background-size: cover;
+	background-position: center;
+}
