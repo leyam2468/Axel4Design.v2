@@ -22,6 +22,23 @@ const ScrolToTop = document.querySelector('#scroltotop');
 
 // Functions************************************
 
+// body &&html
+document.addEventListener('click', (e) => {
+	if (
+		e.target.id !== 'side-nav-btn' &&
+		e.target.id !== 'side-nav-web' &&
+		e.target.id !== 'side-nav-apps-btn' &&
+		e.target.id !== 'side-nav-apps'
+	) {
+		if (sideNavWeb.classList !== 'active') {
+			sideNavWeb.classList.add('active');
+		}
+		if (sideNavApp.classList !== 'active') {
+			sideNavApp.classList.add('active');
+		}
+	}
+});
+
 // Helper BTN
 helper.addEventListener('click', () => {
 	helperSpans[0].classList.toggle('-translate-y-14');
@@ -44,6 +61,7 @@ ScrolToTop.addEventListener('click', () => {
 		}
 	}, 16); // how fast to scroll (this equals roughly 60 fps)
 });
+
 // mobileMenu
 mobileMenuBTN.addEventListener('click', () => {
 	mobileMenu.classList.toggle('-translate-x-full');
@@ -53,22 +71,31 @@ closeMenuBTN.addEventListener('click', () => {
 });
 
 // WEB SITES
-sideNavBTN.addEventListener('click', () => {
-	if (sideNavApp.classList !== '-translate-x-full') {
-		sideNavApp.classList.add('-translate-x-full');
+sideNavWeb.addEventListener('click', (e) => {
+	e.stopPropagation();
+});
+sideNavBTN.addEventListener('click', (e) => {
+	e.stopPropagation();
+	if (sideNavApp.classList !== 'active') {
+		sideNavApp.classList.add('active');
 	}
-	sideNavWeb.classList.toggle('-translate-x-full');
+	sideNavWeb.classList.toggle('active');
 });
 closeSiteNavBTN.addEventListener('click', () => {
-	sideNavWeb.classList.toggle('-translate-x-full');
+	sideNavWeb.classList.toggle('active');
 });
+
 // WEP APPS
-sideNavAppBTN.addEventListener('click', () => {
-	if (sideNavWeb.classList !== '-translate-x-full') {
-		sideNavWeb.classList.add('-translate-x-full');
+sideNavApp.addEventListener('click', (e) => {
+	e.stopPropagation();
+});
+sideNavAppBTN.addEventListener('click', (e) => {
+	e.stopPropagation();
+	if (sideNavWeb.classList !== 'active') {
+		sideNavWeb.classList.add('active');
 	}
-	sideNavApp.classList.toggle('-translate-x-full');
+	sideNavApp.classList.toggle('active');
 });
 closeSiteNavAppBTN.addEventListener('click', () => {
-	sideNavApp.classList.toggle('-translate-x-full');
+	sideNavApp.classList.toggle('active');
 });
