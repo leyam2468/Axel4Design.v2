@@ -30,11 +30,11 @@ document.addEventListener('click', (e) => {
 		e.target.id !== 'side-nav-apps-btn' &&
 		e.target.id !== 'side-nav-apps'
 	) {
-		if (sideNavWeb.classList !== 'active') {
-			sideNavWeb.classList.add('active');
+		if (sideNavWeb.classList !== '-translate-x-80') {
+			sideNavWeb.classList.add('-translate-x-80');
 		}
-		if (sideNavApp.classList !== 'active') {
-			sideNavApp.classList.add('active');
+		if (sideNavApp.classList !== '-translate-x-80') {
+			sideNavApp.classList.add('-translate-x-80');
 		}
 	}
 });
@@ -94,13 +94,13 @@ sideNavWeb.addEventListener('click', (e) => {
 });
 sideNavBTN.addEventListener('click', (e) => {
 	e.stopPropagation();
-	if (sideNavApp.classList !== 'active') {
-		sideNavApp.classList.add('active');
+	if (sideNavApp.classList !== '-translate-x-80') {
+		sideNavApp.classList.add('-translate-x-80');
 	}
-	sideNavWeb.classList.toggle('active');
+	sideNavWeb.classList.toggle('-translate-x-80');
 });
 closeSiteNavBTN.addEventListener('click', () => {
-	sideNavWeb.classList.toggle('active');
+	sideNavWeb.classList.toggle('-translate-x-80');
 });
 
 // WEP APPS
@@ -109,11 +109,11 @@ sideNavApp.addEventListener('click', (e) => {
 });
 sideNavAppBTN.addEventListener('click', (e) => {
 	e.stopPropagation();
-	if (sideNavWeb.classList !== 'active') {
-		sideNavWeb.classList.add('active');
+	if (sideNavWeb.classList !== '-translate-x-80') {
+		sideNavWeb.classList.add('-translate-x-80');
 	}
-	sideNavApp.classList.toggle('active');
+	sideNavApp.classList.toggle('-translate-x-80');
 });
 closeSiteNavAppBTN.addEventListener('click', () => {
-	sideNavApp.classList.toggle('active');
+	sideNavApp.classList.toggle('-translate-x-80');
 });
