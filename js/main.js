@@ -12,10 +12,12 @@ const darkmode = document.querySelector('#darkmode');
 const sideNavWeb = document.querySelector('#side-nav-web');
 const sideNavBTN = document.querySelector('#side-nav-btn');
 const closeSiteNavBTN = document.querySelector('#close-site-nav-btn');
+const webSearch = document.querySelector('#web-search');
 
 const sideNavApp = document.querySelector('#side-nav-apps');
 const sideNavAppBTN = document.querySelector('#side-nav-apps-btn');
 const closeSiteNavAppBTN = document.querySelector('#close-app-nav-btn');
+const appSearch = document.querySelector('#app-search');
 
 // scrolltotop
 const ScrolToTop = document.querySelector('#scroltotop');
@@ -103,6 +105,20 @@ closeSiteNavBTN.addEventListener('click', () => {
 	sideNavWeb.classList.toggle('-translate-x-80');
 });
 
+webSearch.addEventListener('keyup', (e) => {
+	const webSearchVal = e.target.value.toLowerCase();
+	const webMenuItems = document.querySelectorAll('#side-nav-web nav a');
+
+	webMenuItems.forEach((item) => {
+		let itemname = item.textContent.toLowerCase();
+		if (itemname.indexOf(webSearchVal) != -1) {
+			item.style.display = '';
+		} else {
+			item.style.display = 'none';
+		}
+	});
+});
+
 // WEP APPS
 sideNavApp.addEventListener('click', (e) => {
 	e.stopPropagation();
@@ -116,4 +132,18 @@ sideNavAppBTN.addEventListener('click', (e) => {
 });
 closeSiteNavAppBTN.addEventListener('click', () => {
 	sideNavApp.classList.toggle('-translate-x-80');
+});
+
+appSearch.addEventListener('keyup', (e) => {
+	const appSearchVal = e.target.value.toLowerCase();
+	const appMenuItems = document.querySelectorAll('#side-nav-apps nav a');
+
+	appMenuItems.forEach((item) => {
+		let itemname = item.textContent.toLowerCase();
+		if (itemname.indexOf(appSearchVal) != -1) {
+			item.style.display = '';
+		} else {
+			item.style.display = 'none';
+		}
+	});
 });
