@@ -1,7 +1,5 @@
 import '../styles/main.scss';
 
-const loader = document.querySelector('#loader');
-
 const mobileMenuBTN = document.querySelector('#mobile-menu-btn');
 const closeMenuBTN = document.querySelector('#close-menu-btn');
 const mobileMenu = document.querySelector('#mobile-menu');
@@ -25,6 +23,7 @@ const appSearch = document.querySelector('#app-search');
 const ScrolToTop = document.querySelector('#scroltotop');
 
 // Functions************************************
+const loader = document.querySelector('#loader');
 document.addEventListener('DOMContentLoaded', () => {
 	loader.classList.add('hidden');
 });
