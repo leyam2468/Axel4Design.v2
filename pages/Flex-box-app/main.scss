@@ -6,7 +6,7 @@
 body {
 	color: white;
 	background-color: #121212;
-	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 	&::-webkit-scrollbar {
 		width: 0.25rem;
 	}
@@ -91,7 +91,6 @@ a {
 .controls {
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
 	align-items: center;
 	width: 100%;
 	.flex-item {
@@ -99,8 +98,6 @@ a {
 		padding: 5px;
 		display: flex;
 		align-items: center;
-		justify-content: flex-start;
-
 		width: 80%;
 		div {
 			cursor: pointer;

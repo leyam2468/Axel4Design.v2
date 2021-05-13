@@ -1,0 +1,1 @@
+import"./dynamic-import-polyfill.b3685604.js";let e=document.getElementById("hearts");setInterval((()=>{const t=document.createElement("dvi");t.classList.add("heart"),t.style.left=100*Math.random()+"vw",t.style.animationDuration=2*Math.random()+3+"s",t.innerText="❤",e.appendChild(t),setTimeout((()=>{t.remove()}),5e3)}),300);

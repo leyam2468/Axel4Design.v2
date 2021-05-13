@@ -1,14 +1,14 @@
-let qrBtn = document.querySelector(".qr-btn");
-let qrImg = document.querySelector(".qr-img");
-let loading = document.querySelector(".loading");
+let qrBtn = document.querySelector('.qr-btn');
+let qrImg = document.querySelector('.QRCodeIMG');
+let loading = document.querySelector('.loading');
 
-qrBtn.addEventListener("click", () => {
-	let qrInput = document.querySelector(".qr-input").value;
+qrBtn.addEventListener('click', () => {
+	let qrInput = document.querySelector('.qr-input').value;
 
 	if (qrInput) {
-		loading.style.display = "block";
+		loading.style.display = 'block';
 		qrImg.onload = function () {
-			loading.style.display = "none";
+			loading.style.display = 'none';
 		};
 	}
 
