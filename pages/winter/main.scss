@@ -1,0 +1,32 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #121212;
+	color: white;
+	height: 100vh;
+}
+
+.heart-sec {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	color: red;
+	#hearts {
+		.heart {
+			position: absolute;
+			top: -1vh;
+			transform: translateY(0);
+			animation: fall 3s forwards;
+			font-size: 2rem;
+		}
+	}
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(110vh);
+	}
+}

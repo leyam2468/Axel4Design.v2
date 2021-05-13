@@ -3,15 +3,11 @@
 @tailwind utilities;
 
 .sideNavMenu {
-	@apply flex items-center py-2.5 px-4 rounded transition delay-500 ease-in-out hover:bg-black-0.3 hover:text-white-1 dark:hover:bg-red-800;
+	@apply flex items-center py-2.5 px-4 rounded transition delay-300 ease-in-out hover:bg-black-0.3 hover:text-white-1 dark:hover:bg-red-800;
 }
 
 .banner {
 	background: url(/img/4005523.svg);
 	background-size: cover;
 	background-position: center;
-}
-.hidden-loading {
-	opacity: 0;
-	visibility: hidden;
 }
