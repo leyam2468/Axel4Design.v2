@@ -25,6 +25,148 @@
 		>
 			<span class="text-white-1 text-2xl">Loading ...</span>
 		</div>
+
+		<!-- helper -->
+		<div
+			class="
+				fixed
+				bottom-5
+				z-10
+				right-5
+				w-12
+				h-12
+				rounded-full
+				text-white-1
+				shadow-lg
+			"
+		>
+			<div
+				class="relative w-full h-full flex items-center justify-center"
+			>
+				<div
+					id="helper"
+					class="
+						w-11
+						h-11
+						z-20
+						absolute
+						flex
+						items-center
+						justify-center
+						rounded-full
+						focus:outline-none
+						shadow-xl
+						border-4 border-solid border-red-700
+						bg-red-600
+						hover:bg-red-800
+						transform
+						transition-all
+						duration-500
+						ease-in-out
+						hover:scale-110
+						cursor-pointer
+					"
+				>
+					<svg
+						class="w-8 h-8"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+						></path>
+					</svg>
+				</div>
+
+				<div
+					id="helper-spans"
+					class="
+						w-full
+						h-full
+						z-10
+						absolute
+						rounded-full
+						cursor-pointer
+						shadow-lg
+					"
+				>
+					<!-- darkmode	 -->
+					<span
+						id="darkmode"
+						class="
+							w-12
+							h-12
+							rounded-full
+							bg-red-600
+							flex
+							items-center
+							justify-center
+							absolute
+							transform
+							transition-all
+							duration-500
+							ease-in-out
+							hover:bg-red-800
+							hover:scale-110
+						"
+					>
+						<svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+							></path>
+						</svg>
+					</span>
+					<!-- Scroll to top -->
+					<span
+						id="scroltotop"
+						class="
+							w-12
+							h-12
+							rounded-full
+							bg-red-600
+							flex
+							items-center
+							justify-center
+							absolute
+							transform
+							transition-all
+							duration-500
+							ease-in-out
+							hover:bg-red-800
+							hover:scale-110
+						"
+						><svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 11l7-7 7 7M5 19l7-7 7 7"
+							></path>
+						</svg>
+					</span>
+				</div>
+			</div>
+		</div>
+
 		<!-- Navbar -->
 		<nav class="bg-gray-200 dark:bg-black-1 shadow-xl">
 			<!-- Nav Container -->
@@ -450,12 +592,9 @@
 					<span class="text-red-700 px-1">WEB </span> SITES</a
 				>
 				<!-- close BTn -->
-				<button
-					id="close-site-nav-btn"
-					class="hover:text-red-800 focus:outline-none"
-				>
+				<button id="close-site-nav-btn" class="focus:outline-none">
 					<svg
-						class="w-8 h-8 hover:fill-current"
+						class="w-8 h-8"
 						fill="white"
 						stroke="currentColor"
 						viewBox="0 0 24 24"
@@ -584,12 +723,9 @@
 					<span class="text-red-700 px-1">WEB</span> APPS</a
 				>
 				<!-- close BTn -->
-				<button
-					id="close-app-nav-btn"
-					class="hover:text-red-800 focus:outline-none"
-				>
+				<button id="close-app-nav-btn" class="focus:outline-none">
 					<svg
-						class="w-8 h-8 hover:fill-current"
+						class="w-8 h-8"
 						fill="white"
 						stroke="currentColor"
 						viewBox="0 0 24 24"
@@ -709,167 +845,6 @@
 			</nav>
 		</nav>
 
-		<!-- helper -->
-		<div
-			class="
-				fixed
-				bottom-5
-				z-10
-				right-5
-				w-12
-				h-12
-				rounded-full
-				text-white-1
-				shadow-lg
-			"
-		>
-			<div
-				class="relative w-full h-full flex items-center justify-center"
-			>
-				<div
-					id="helper"
-					class="
-						w-11
-						h-11
-						z-20
-						absolute
-						flex
-						items-center
-						justify-center
-						rounded-full
-						focus:outline-none
-						shadow-xl
-						border-4 border-solid border-red-700
-						bg-red-600
-						hover:bg-red-800
-						transform
-						transition-all
-						duration-500
-						ease-in-out
-						hover:scale-110
-						cursor-pointer
-					"
-				>
-					<svg
-						class="w-8 h-8"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-						></path>
-					</svg>
-				</div>
-
-				<div
-					id="helper-spans"
-					class="
-						w-full
-						h-full
-						z-10
-						absolute
-						rounded-full
-						cursor-pointer
-						shadow-lg
-					"
-				>
-					<!-- darkmode	 -->
-					<span
-						id="darkmode"
-						class="
-							w-12
-							h-12
-							rounded-full
-							bg-red-600
-							flex
-							items-center
-							justify-center
-							absolute
-							transform
-							transition-all
-							duration-500
-							ease-in-out
-							hover:bg-red-800
-							hover:scale-110
-						"
-					>
-						<svg
-							class="w-6 h-6"
-							fill="none"
-							stroke="currentColor"
-							viewBox="0 0 24 24"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-							></path>
-						</svg>
-					</span>
-					<!-- Scroll to top -->
-					<span
-						id="scroltotop"
-						class="
-							w-12
-							h-12
-							rounded-full
-							bg-red-600
-							flex
-							items-center
-							justify-center
-							absolute
-							transform
-							transition-all
-							duration-500
-							ease-in-out
-							hover:bg-red-800
-							hover:scale-110
-						"
-						><svg
-							class="w-6 h-6"
-							fill="none"
-							stroke="currentColor"
-							viewBox="0 0 24 24"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M5 11l7-7 7 7M5 19l7-7 7 7"
-							></path>
-						</svg>
-					</span>
-
-					<span
-						class="
-							w-12
-							h-12
-							rounded-full
-							bg-red-600
-							flex
-							items-center
-							justify-center
-							absolute
-							transform
-							transition-all
-							duration-500
-							ease-in-out
-							hover:bg-red-800
-							hover:scale-110
-						"
-						>3
-					</span>
-				</div>
-			</div>
-		</div>
-
 		<!-- Banner -->
 		<section class="banner">
 			<div
@@ -917,7 +892,8 @@
 					<div class="flex space-x-2">
 						<!-- Facebook -->
 						<a
-							href=""
+							href="https://www.facebook.com/leyam24685"
+							target="_blank"
 							class="hover:text-red-800 transition duration-300"
 						>
 							<svg
@@ -933,7 +909,8 @@
 						</a>
 						<!-- instagram -->
 						<a
-							href=""
+							href="https://www.instagram.com/leyam24685"
+							target="_blank"
 							class="hover:text-red-800 transition duration-300"
 						>
 							<svg
@@ -949,7 +926,8 @@
 						</a>
 						<!-- CodePin -->
 						<a
-							href=""
+							href="https://codepen.io/leyam24685"
+							target="_blank"
 							class="hover:text-red-800 transition duration-300"
 						>
 							<svg
@@ -965,7 +943,8 @@
 						</a>
 						<!-- Githup -->
 						<a
-							href=""
+							href="https://github.com/leyam2468"
+							target="_blank"
 							class="hover:text-red-800 transition duration-300"
 						>
 							<svg
@@ -981,7 +960,8 @@
 						</a>
 						<!-- Whatsapp -->
 						<a
-							href=""
+							href="tel:+201023909759"
+							target="_blank"
 							class="hover:text-red-800 transition duration-300"
 						>
 							<svg
@@ -997,7 +977,8 @@
 						</a>
 						<!-- Linkedin -->
 						<a
-							href=""
+							href="https://www.linkedin.com/lin/leyam24685"
+							target="_blank"
 							class="hover:text-red-800 transition duration-300"
 						>
 							<svg
@@ -1012,48 +993,6 @@
 							</svg>
 						</a>
 					</div>
-
-					<!-- Call Me & CV -->
-					<!-- <div class="flex space-x-3">
-						<a
-							href=""
-							class="flex px-4 py-2 text-white-1 rounded shadow-2xl bg-red-700 hover:bg-red-800 transition duration-200"
-						>
-							<svg
-								class="w-6 h-6"
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M16 8l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z"
-								></path>
-							</svg>
-							Call Me</a
-						>
-						<a
-							href=""
-							class="flex px-4 py-2 text-white-1 rounded shadow-2xl bg-red-700 hover:bg-red-800 transition duration-200"
-							><svg
-								class="w-6 h-6"
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
-								></path></svg
-							>My Cv</a
-						>
-					</div> -->
 				</div>
 			</div>
 		</section>
@@ -1182,7 +1121,8 @@
 						<!-- BTN -->
 						<div class="flex justify-center items-center">
 							<a
-								href=""
+								href="tel:+201023909759"
+								target="_blank"
 								class="
 									bg-gray-500
 									dark:bg-black-0.4
@@ -1201,7 +1141,8 @@
 								>Call Me</a
 							>
 							<a
-								href=""
+								href="https://drive.google.com/file/d/1lY-U-riIqcwhxPuL7k3DtJ1Zdr-4eydK/view?usp=sharing"
+								target="_blank"
 								class="
 									bg-gray-500
 									dark:bg-black-0.4
@@ -2698,7 +2639,16 @@
 		</section>
 
 		<!-- footer -->
-		<footer class="bg-black-0.2 text-white-1 px-6 py-2 text-center">
+		<footer
+			class="
+				bg-gray-300
+				px-6
+				py-2
+				text-center
+				dark:bg-black-0.4
+				dark:text-white-1
+			"
+		>
 			<div class="text-2xl font-bold">
 				Axel<span class="text-red-700">4</span>Design
 			</div>
