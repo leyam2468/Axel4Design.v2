@@ -14,7 +14,7 @@ module.exports = {
 				'90vh': '90vh',
 			},
 			colors: {
-				darkmode: '#1f1f1f',
+				darkmode: '#031220',
 				black: {
 					0.1: 'rgba(0, 0, 0, 0.1)',
 					0.2: 'rgba(0, 0, 0, 0.2)',
