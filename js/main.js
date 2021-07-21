@@ -27,7 +27,7 @@ const ScrolToTop = document.querySelector('#scroltotop');
 // Functions************************************
 
 document.addEventListener('DOMContentLoaded', () => {
-	Loading.classList.add('hidden');
+	Loading.remove();
 });
 // body &&html
 document.addEventListener('click', (e) => {
