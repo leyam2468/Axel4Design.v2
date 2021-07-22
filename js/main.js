@@ -1,4 +1,6 @@
 import '../styles/main.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Loading = document.querySelector('#Loading');
 
@@ -29,6 +31,9 @@ const ScrolToTop = document.querySelector('#scroltotop');
 document.addEventListener('DOMContentLoaded', () => {
 	Loading.remove();
 });
+//
+AOS.init({});
+
 // body &&html
 document.addEventListener('click', (e) => {
 	if (
