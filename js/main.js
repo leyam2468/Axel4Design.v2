@@ -29,7 +29,9 @@ const ScrolToTop = document.querySelector('#scroltotop');
 // Functions************************************
 
 document.addEventListener('DOMContentLoaded', () => {
-	Loading.remove();
+	setTimeout(() => {
+		Loading.remove();
+	}, 1000);
 });
 //
 AOS.init({});
