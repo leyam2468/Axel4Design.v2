@@ -2,7 +2,7 @@ import '../styles/main.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Loading = document.querySelector('#Loading');
+const Loading = document.querySelector('#loading');
 
 const mobileMenuBTN = document.querySelector('#mobile-menu-btn');
 const closeMenuBTN = document.querySelector('#close-menu-btn');
@@ -31,9 +31,9 @@ const ScrolToTop = document.querySelector('#scroltotop');
 document.addEventListener('DOMContentLoaded', () => {
 	setTimeout(() => {
 		Loading.remove();
-	}, 1000);
+	}, 2000);
 });
-//
+
 AOS.init({});
 
 // body &&html
