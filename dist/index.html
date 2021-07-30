@@ -4,37 +4,187 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="data:image/png;base64,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" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff"
+			http-equiv="Content-Type"
+		/>
 		<meta name="theme-color" content="#141318" />
 		<title>Axel4Design-Home</title>
-
-		<script></script>
-	<script type="module" crossorigin src="/assets/main.159eea0a.js"></script>
+		
+	<script type="module" crossorigin src="/assets/main.4f9ad1f0.js"></script>
   <link rel="modulepreload" href="/assets/dynamic-import-polyfill.b3685604.js">
-  <link rel="stylesheet" href="/assets/main.33c8ffe4.css">
+  <link rel="modulepreload" href="/assets/vendor.1d91cf28.js">
+  <link rel="stylesheet" href="/assets/main.d879fe94.css">
 </head>
 	<body class="dark:bg-darkmode">
+		<!-- Loading -->
+		<div id="loading">
+			<div class="preloader-cont">
+				<h1>Axel4Design</h1>
+			</div>
+			<p>Mohamed Ahmed</p>
+			<div class="preloader-1">
+				<span class="line line-1"></span>
+				<span class="line line-2"></span>
+				<span class="line line-3"></span>
+				<span class="line line-4"></span>
+				<span class="line line-5"></span>
+				<span class="line line-6"></span>
+				<span class="line line-7"></span>
+				<span class="line line-8"></span>
+				<span class="line line-9"></span>
+			</div>
+		</div>
+		<!-- helper -->
 		<div
-			id="loader"
 			class="
 				fixed
-				top-0
-				left-0
-				w-screen
-				h-screen
-				bg-red-700
-				z-[99]
-				flex
-				justify-center
-				items-center
+				bottom-5
+				z-10
+				right-5
+				w-12
+				h-12
+				rounded-full
+				text-white-1
+				shadow-lg
 			"
+			data-aos="zoom-in-up"
+			data-aos-delay="50"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out"
 		>
-			<span class="text-white-1 text-2xl">Loading ...</span>
+			<div
+				class="relative w-full h-full flex items-center justify-center"
+			>
+				<div
+					id="helper"
+					class="
+						w-11
+						h-11
+						z-20
+						absolute
+						flex
+						items-center
+						justify-center
+						rounded-full
+						focus:outline-none
+						shadow-xl
+						border-4 border-solid border-red-700
+						bg-red-600
+						hover:bg-red-800
+						transform
+						transition-all
+						duration-500
+						ease-in-out
+						hover:scale-110
+						cursor-pointer
+					"
+				>
+					<svg
+						class="w-8 h-8"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+						></path>
+					</svg>
+				</div>
+
+				<div
+					id="helper-spans"
+					class="
+						w-full
+						h-full
+						z-10
+						absolute
+						rounded-full
+						cursor-pointer
+						shadow-lg
+					"
+				>
+					<!-- darkmode	 -->
+					<span
+						id="darkmode"
+						class="
+							w-12
+							h-12
+							rounded-full
+							bg-red-600
+							flex
+							items-center
+							justify-center
+							absolute
+							transform
+							transition-all
+							duration-500
+							ease-in-out
+							hover:bg-red-800
+							hover:scale-110
+						"
+					>
+						<svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+							></path>
+						</svg>
+					</span>
+					<!-- Scroll to top -->
+					<span
+						id="scroltotop"
+						class="
+							w-12
+							h-12
+							rounded-full
+							bg-red-600
+							flex
+							items-center
+							justify-center
+							absolute
+							transform
+							transition-all
+							duration-500
+							ease-in-out
+							hover:bg-red-800
+							hover:scale-110
+						"
+						><svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 11l7-7 7 7M5 19l7-7 7 7"
+							></path>
+						</svg>
+					</span>
+				</div>
+			</div>
 		</div>
 		<!-- Navbar -->
 		<nav class="bg-gray-200 dark:bg-black-1 shadow-xl">
 			<!-- Nav Container -->
 			<div
 				class="
+					overflow-hidden
 					m-auto
 					max-w-6xl
 					px-2
@@ -47,7 +197,15 @@
 				"
 			>
 				<!-- left Nav Logo & Menu -->
-				<div class="flex items-center md:space-x-3">
+				<div
+					class="flex items-center md:space-x-3"
+					data-aos="fade-right"
+					data-aos-offset="0"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-mirror="true"
+				>
 					<!-- Mune BTN for mob -->
 					<button
 						id="mobile-menu-btn"
@@ -145,7 +303,15 @@
 					</div>
 				</div>
 				<!-- right Nav For side Nav -->
-				<div class="flex items-center space-x-1 md:space-x-3">
+				<div
+					class="flex items-center space-x-1 md:space-x-3"
+					data-aos="fade-left"
+					data-aos-offset="0"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-mirror="true"
+				>
 					<!-- Web Sites -->
 					<button
 						id="side-nav-btn"
@@ -455,12 +621,9 @@
 					<span class="text-red-700 px-1">WEB </span> SITES</a
 				>
 				<!-- close BTn -->
-				<button
-					id="close-site-nav-btn"
-					class="hover:text-red-800 focus:outline-none"
-				>
+				<button id="close-site-nav-btn" class="focus:outline-none">
 					<svg
-						class="w-8 h-8 hover:fill-current"
+						class="w-8 h-8"
 						fill="white"
 						stroke="currentColor"
 						viewBox="0 0 24 24"
@@ -510,11 +673,7 @@
 					href=""
 					class="sideNavMenu bg-black-0.3 dark:bg-red-800 text-sm"
 				>
-					<img
-						src="https://aboukir-institutes.edu.eg/media/images/logo-icon.png"
-						alt=""
-						class="w-7 h-7 mr-2"
-					/>
+					<img src="/assets/ahi.763286ae.png" alt="" class="w-7 h-7 mr-2" />
 					Aboukir Hight Institutes</a
 				>
 				<a href="" class="sideNavMenu">
@@ -531,55 +690,7 @@
 							stroke-width="2"
 							d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
 						></path></svg
-					>About</a
-				>
-				<a href="" class="sideNavMenu">
-					<svg
-						class="w-6 h-6 mx-2"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
-						></path></svg
-					>Contacts</a
-				>
-				<a href="" class="sideNavMenu">
-					<svg
-						class="w-6 h-6 mx-2"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
-						></path></svg
-					>portifolio</a
-				>
-				<a href="" class="sideNavMenu">
-					<svg
-						class="w-6 h-6 mx-2"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
-						></path></svg
-					>Q&C</a
+					>......</a
 				>
 			</nav>
 		</nav>
@@ -641,12 +752,9 @@
 					<span class="text-red-700 px-1">WEB</span> APPS</a
 				>
 				<!-- close BTn -->
-				<button
-					id="close-app-nav-btn"
-					class="hover:text-red-800 focus:outline-none"
-				>
+				<button id="close-app-nav-btn" class="focus:outline-none">
 					<svg
-						class="w-8 h-8 hover:fill-current"
+						class="w-8 h-8"
 						fill="white"
 						stroke="currentColor"
 						viewBox="0 0 24 24"
@@ -766,167 +874,6 @@
 			</nav>
 		</nav>
 
-		<!-- helper -->
-		<div
-			class="
-				fixed
-				bottom-5
-				z-10
-				right-5
-				w-12
-				h-12
-				rounded-full
-				text-white-1
-				shadow-lg
-			"
-		>
-			<div
-				class="relative w-full h-full flex items-center justify-center"
-			>
-				<div
-					id="helper"
-					class="
-						w-11
-						h-11
-						z-20
-						absolute
-						flex
-						items-center
-						justify-center
-						rounded-full
-						focus:outline-none
-						shadow-xl
-						border-4 border-solid border-red-700
-						bg-red-600
-						hover:bg-red-800
-						transform
-						transition-all
-						duration-500
-						ease-in-out
-						hover:scale-110
-						cursor-pointer
-					"
-				>
-					<svg
-						class="w-8 h-8"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-						></path>
-					</svg>
-				</div>
-
-				<div
-					id="helper-spans"
-					class="
-						w-full
-						h-full
-						z-10
-						absolute
-						rounded-full
-						cursor-pointer
-						shadow-lg
-					"
-				>
-					<!-- darkmode	 -->
-					<span
-						id="darkmode"
-						class="
-							w-12
-							h-12
-							rounded-full
-							bg-red-600
-							flex
-							items-center
-							justify-center
-							absolute
-							transform
-							transition-all
-							duration-500
-							ease-in-out
-							hover:bg-red-800
-							hover:scale-110
-						"
-					>
-						<svg
-							class="w-6 h-6"
-							fill="none"
-							stroke="currentColor"
-							viewBox="0 0 24 24"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-							></path>
-						</svg>
-					</span>
-					<!-- Scroll to top -->
-					<span
-						id="scroltotop"
-						class="
-							w-12
-							h-12
-							rounded-full
-							bg-red-600
-							flex
-							items-center
-							justify-center
-							absolute
-							transform
-							transition-all
-							duration-500
-							ease-in-out
-							hover:bg-red-800
-							hover:scale-110
-						"
-						><svg
-							class="w-6 h-6"
-							fill="none"
-							stroke="currentColor"
-							viewBox="0 0 24 24"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M5 11l7-7 7 7M5 19l7-7 7 7"
-							></path>
-						</svg>
-					</span>
-
-					<span
-						class="
-							w-12
-							h-12
-							rounded-full
-							bg-red-600
-							flex
-							items-center
-							justify-center
-							absolute
-							transform
-							transition-all
-							duration-500
-							ease-in-out
-							hover:bg-red-800
-							hover:scale-110
-						"
-						>3
-					</span>
-				</div>
-			</div>
-		</div>
-
 		<!-- Banner -->
 		<section class="banner">
 			<div
@@ -935,6 +882,7 @@
 					md:max-w-6xl
 					h-90vh
 					m-auto
+					overflow-hidden
 					flex
 					justify-center
 					md:justify-start
@@ -952,6 +900,12 @@
 						rounded
 						shadow-2xl
 					"
+					data-aos="fade-up"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-mirror="true"
+					data-aos-once="false"
 				>
 					<h2 class="text-2xl md:text-3xl ml-3">
 						<span class="text-red-700 font-bold">Hi,</span>My Name
@@ -974,7 +928,8 @@
 					<div class="flex space-x-2">
 						<!-- Facebook -->
 						<a
-							href=""
+							href="https://www.facebook.com/leyam24685"
+							target="_blank"
 							class="hover:text-red-800 transition duration-300"
 						>
 							<svg
@@ -990,7 +945,8 @@
 						</a>
 						<!-- instagram -->
 						<a
-							href=""
+							href="https://www.instagram.com/leyam24685"
+							target="_blank"
 							class="hover:text-red-800 transition duration-300"
 						>
 							<svg
@@ -1006,7 +962,8 @@
 						</a>
 						<!-- CodePin -->
 						<a
-							href=""
+							href="https://codepen.io/leyam24685"
+							target="_blank"
 							class="hover:text-red-800 transition duration-300"
 						>
 							<svg
@@ -1022,7 +979,8 @@
 						</a>
 						<!-- Githup -->
 						<a
-							href=""
+							href="https://github.com/leyam2468"
+							target="_blank"
 							class="hover:text-red-800 transition duration-300"
 						>
 							<svg
@@ -1038,7 +996,8 @@
 						</a>
 						<!-- Whatsapp -->
 						<a
-							href=""
+							href="tel:+201023909759"
+							target="_blank"
 							class="hover:text-red-800 transition duration-300"
 						>
 							<svg
@@ -1054,7 +1013,8 @@
 						</a>
 						<!-- Linkedin -->
 						<a
-							href=""
+							href="https://www.linkedin.com/lin/leyam24685"
+							target="_blank"
 							class="hover:text-red-800 transition duration-300"
 						>
 							<svg
@@ -1069,48 +1029,6 @@
 							</svg>
 						</a>
 					</div>
-
-					<!-- Call Me & CV -->
-					<!-- <div class="flex space-x-3">
-						<a
-							href=""
-							class="flex px-4 py-2 text-white-1 rounded shadow-2xl bg-red-700 hover:bg-red-800 transition duration-200"
-						>
-							<svg
-								class="w-6 h-6"
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M16 8l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M5 3a2 2 0 00-2 2v1c0 8.284 6.716 15 15 15h1a2 2 0 002-2v-3.28a1 1 0 00-.684-.948l-4.493-1.498a1 1 0 00-1.21.502l-1.13 2.257a11.042 11.042 0 01-5.516-5.517l2.257-1.128a1 1 0 00.502-1.21L9.228 3.683A1 1 0 008.279 3H5z"
-								></path>
-							</svg>
-							Call Me</a
-						>
-						<a
-							href=""
-							class="flex px-4 py-2 text-white-1 rounded shadow-2xl bg-red-700 hover:bg-red-800 transition duration-200"
-							><svg
-								class="w-6 h-6"
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 24 24"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
-								></path></svg
-							>My Cv</a
-						>
-					</div> -->
 				</div>
 			</div>
 		</section>
@@ -1127,11 +1045,20 @@
 					w-11/12
 					mx-auto
 					p-4
+					overflow-hidden
 				"
 			>
 				<div class="grid md:grid-cols-2">
 					<!-- info -->
-					<div class="space-y-2">
+					<div
+						class="space-y-2"
+						data-aos="fade-right"
+						data-aos-delay="50"
+						data-aos-duration="700"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+					>
 						<h1 class="text-2xl md:text-3xl font-bold">
 							i'm
 							<span class="text-red-700">Front End </span
@@ -1239,7 +1166,8 @@
 						<!-- BTN -->
 						<div class="flex justify-center items-center">
 							<a
-								href=""
+								href="tel:+201023909759"
+								target="_blank"
 								class="
 									bg-gray-500
 									dark:bg-black-0.4
@@ -1258,7 +1186,8 @@
 								>Call Me</a
 							>
 							<a
-								href=""
+								href="https://drive.google.com/file/d/1lY-U-riIqcwhxPuL7k3DtJ1Zdr-4eydK/view?usp=sharing"
+								target="_blank"
 								class="
 									bg-gray-500
 									dark:bg-black-0.4
@@ -1280,7 +1209,7 @@
 					</div>
 					<!-- img -->
 					<img
-						src="/assets/me.08e66cfd.jpg"
+						src="/assets/MyPic.77069fb8.jpg"
 						alt=""
 						class="
 							border border-gray-300
@@ -1289,8 +1218,14 @@
 							shadow
 							h-96
 							w-full
-							object-cover object-top
+							object-cover object-center
 						"
+						data-aos="fade-left"
+						data-aos-delay="50"
+						data-aos-duration="700"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					/>
 				</div>
 				<!-- Progress -->
@@ -1304,7 +1239,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="50"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 99%"></span>
 						<p
@@ -1329,7 +1271,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="100"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 95%"></span>
 						<p
@@ -1354,7 +1303,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="150"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 80%"></span>
 						<p
@@ -1379,7 +1335,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="200"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 85%"></span>
 						<p
@@ -1404,7 +1367,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="250"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 70%"></span>
 						<p
@@ -1429,7 +1399,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="300"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 70%"></span>
 						<p
@@ -1454,7 +1431,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="350"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 85%"></span>
 						<p
@@ -1479,7 +1463,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="400"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 85%"></span>
 						<p
@@ -1504,7 +1495,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="450"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 90%"></span>
 						<p
@@ -1529,7 +1527,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="500"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 90%"></span>
 						<p
@@ -1554,7 +1559,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="550"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 85%"></span>
 						<p
@@ -1579,7 +1591,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="600"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 80%"></span>
 						<p
@@ -1604,7 +1623,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="650"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 75%"></span>
 						<p
@@ -1629,7 +1655,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="700"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 80%"></span>
 						<p
@@ -1654,7 +1687,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="750"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 90%"></span>
 						<p
@@ -1679,7 +1719,14 @@
 							rounded
 							flex
 							relative
+							border-l-4 border-red-900
 						"
+						data-aos="fade-up"
+						data-aos-delay="800"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class="bg-red-700" style="width: 90%"></span>
 						<p
@@ -1707,6 +1754,12 @@
 							shadow-xl
 							p-5
 						"
+						data-aos="fade-up"
+						data-aos-delay="100"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<div
 							class="
@@ -1733,6 +1786,12 @@
 							shadow-xl
 							p-5
 						"
+						data-aos="fade-up"
+						data-aos-delay="150"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<div
 							class="
@@ -1759,6 +1818,12 @@
 							shadow-xl
 							p-5
 						"
+						data-aos="fade-up"
+						data-aos-delay="200"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<div
 							class="
@@ -1785,6 +1850,12 @@
 							shadow-xl
 							p-5
 						"
+						data-aos="fade-up"
+						data-aos-delay="250"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<div
 							class="
@@ -1811,6 +1882,12 @@
 							shadow-xl
 							p-5
 						"
+						data-aos="fade-up"
+						data-aos-delay="300"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<div
 							class="
@@ -1837,6 +1914,12 @@
 							shadow-xl
 							p-5
 						"
+						data-aos="fade-up"
+						data-aos-delay="350"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<div
 							class="
@@ -1863,6 +1946,12 @@
 							shadow-xl
 							p-5
 						"
+						data-aos="fade-up"
+						data-aos-delay="400"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<div
 							class="
@@ -1872,10 +1961,7 @@
 								dark:bg-darkmode
 							"
 						>
-							<img
-								src="https://img.icons8.com/fluent/144/000000/pug.png"
-								class="w-24"
-							/>
+							<img src="/assets/pug.54cc5ab7.png" class="w-24" />
 						</div>
 						<h2 class="text-xl font-bold mt-4">pug</h2>
 					</div>
@@ -1889,6 +1975,12 @@
 							shadow-xl
 							p-5
 						"
+						data-aos="fade-up"
+						data-aos-delay="450"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<div
 							class="
@@ -1915,6 +2007,12 @@
 							shadow-xl
 							p-5
 						"
+						data-aos="fade-up"
+						data-aos-delay="500"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<div
 							class="
@@ -1941,6 +2039,12 @@
 							shadow-xl
 							p-5
 						"
+						data-aos="fade-up"
+						data-aos-delay="550"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<div
 							class="
@@ -1951,10 +2055,7 @@
 								overflow-hidden
 							"
 						>
-							<img
-								src="https://avatars.githubusercontent.com/u/67109815?s=200&v=4"
-								class="w-24"
-							/>
+							<img src="/assets/talwend.ac8e5887.png" class="w-24" />
 						</div>
 						<h2 class="text-xl font-bold mt-4">Tailwind</h2>
 					</div>
@@ -1968,6 +2069,12 @@
 							shadow-xl
 							p-5
 						"
+						data-aos="fade-up"
+						data-aos-delay="600"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<div
 							class="
@@ -1994,6 +2101,12 @@
 							shadow-xl
 							p-5
 						"
+						data-aos="fade-up"
+						data-aos-delay="650"
+						data-aos-duration="500"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<div
 							class="
@@ -2016,9 +2129,11 @@
 
 		<!-- portfolio -->
 		<section class="portfolio my-20">
-			<div class="w-11/12 mx-auto">
+			<div class="w-11/12 mx-auto overflow-hidden">
 				<!-- title -->
-				<div class="title flex justify-center items-center relative">
+				<div
+					class="title py-5 flex justify-center items-center relative"
+				>
 					<h2
 						class="
 							text-3xl
@@ -2030,6 +2145,12 @@
 							z-10
 							dark:text-white-1
 						"
+						data-aos="fade-right"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						Portfolio
 					</h2>
@@ -2041,6 +2162,12 @@
 							dark:text-black-0.3
 							uppercase
 						"
+						data-aos="fade-left"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 						>Axel</span
 					>
 				</div>
@@ -2055,6 +2182,12 @@
 							shadow-2xl
 							overflow-hidden
 						"
+						data-aos="fade-up"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<img src="/assets/Coming+Soon+-+Thumbnail.a1681e53.jpg" alt="" />
 					</div>
@@ -2067,6 +2200,12 @@
 							shadow-2xl
 							overflow-hidden
 						"
+						data-aos="fade-up"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<img src="/assets/Coming+Soon+-+Thumbnail.a1681e53.jpg" alt="" />
 					</div>
@@ -2079,6 +2218,12 @@
 							shadow-2xl
 							overflow-hidden
 						"
+						data-aos="fade-up"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<img src="/assets/Coming+Soon+-+Thumbnail.a1681e53.jpg" alt="" />
 					</div>
@@ -2091,6 +2236,12 @@
 							shadow-2xl
 							overflow-hidden
 						"
+						data-aos="fade-up"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<img src="/assets/Coming+Soon+-+Thumbnail.a1681e53.jpg" alt="" />
 					</div>
@@ -2103,6 +2254,12 @@
 							shadow-2xl
 							overflow-hidden
 						"
+						data-aos="fade-up"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<img src="/assets/Coming+Soon+-+Thumbnail.a1681e53.jpg" alt="" />
 					</div>
@@ -2115,6 +2272,12 @@
 							shadow-2xl
 							overflow-hidden
 						"
+						data-aos="fade-up"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<img src="/assets/Coming+Soon+-+Thumbnail.a1681e53.jpg" alt="" />
 					</div>
@@ -2127,6 +2290,12 @@
 							shadow-2xl
 							overflow-hidden
 						"
+						data-aos="fade-up"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<img src="/assets/Coming+Soon+-+Thumbnail.a1681e53.jpg" alt="" />
 					</div>
@@ -2139,6 +2308,12 @@
 							shadow-2xl
 							overflow-hidden
 						"
+						data-aos="fade-up"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<img src="/assets/Coming+Soon+-+Thumbnail.a1681e53.jpg" alt="" />
 					</div>
@@ -2148,9 +2323,11 @@
 
 		<!-- achievements -->
 		<section class="achievements my-20">
-			<div class="w-11/12 mx-auto">
+			<div class="w-11/12 mx-auto overflow-hidden">
 				<!-- title -->
-				<div class="title flex justify-center items-center relative">
+				<div
+					class="title py-5 flex justify-center items-center relative"
+				>
 					<h2
 						class="
 							text-3xl
@@ -2162,6 +2339,12 @@
 							z-10
 							dark:text-white-1
 						"
+						data-aos="fade-right"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						achievements
 					</h2>
@@ -2173,6 +2356,12 @@
 							dark:text-black-0.3
 							uppercase
 						"
+						data-aos="fade-left"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 						>Axel</span
 					>
 				</div>
@@ -2191,6 +2380,12 @@
 							space-y-6
 							py-10
 						"
+						data-aos="fade-left"
+						data-aos-delay="100"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class=""
 							><svg
@@ -2226,6 +2421,12 @@
 							space-y-6
 							py-10
 						"
+						data-aos="fade-left"
+						data-aos-delay="200"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class=""
 							><svg
@@ -2261,6 +2462,12 @@
 							space-y-6
 							py-10
 						"
+						data-aos="fade-left"
+						data-aos-delay="300"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class=""
 							><svg
@@ -2296,6 +2503,12 @@
 							space-y-6
 							py-10
 						"
+						data-aos="fade-left"
+						data-aos-delay="400"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<span class=""
 							><svg
@@ -2321,11 +2534,13 @@
 			</div>
 		</section>
 
-		<!-- Last Posts -->
-		<section class="lats-posts my-20">
-			<div class="w-11/12 mx-auto">
+		<!-- priceing-->
+		<section class="priceing my-20">
+			<div class="w-11/12 mx-auto overflow-hidden">
 				<!-- title -->
-				<div class="title flex justify-center items-center relative">
+				<div
+					class="title py-5 flex justify-center items-center relative"
+				>
 					<h2
 						class="
 							text-3xl
@@ -2337,6 +2552,560 @@
 							z-10
 							dark:text-white-1
 						"
+						data-aos="fade-left"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+					>
+						Priceing
+					</h2>
+					<span
+						class="
+							absolute
+							font-bold
+							text-9xl text-gray-200
+							dark:text-black-0.3
+							uppercase
+						"
+						data-aos="fade-right"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+						>Axel</span
+					>
+				</div>
+
+				<!-- content -->
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-16">
+					<!-- portfolio -->
+					<div
+						class="
+							bg-gray-100
+							dark:bg-black-0.4
+							dark:text-white-1
+							shadow-2xl
+							drop-shadow-xl
+							rounded-lg
+						"
+						data-aos="fade-right"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+					>
+						<div class="w-full py-5 flex flex-col items-center">
+							<h2
+								class="
+									text-3xl
+									uppercase
+									font-bold
+									text-gray-600
+								"
+							>
+								Portfolio
+							</h2>
+							<p class="my-2 text-gray-400">
+								Persons-Companys-organizations
+							</p>
+
+							<span
+								class="
+									text-3xl
+									bg-red-600
+									text-white-1
+									rounded-full
+									flex
+									justify-center
+									items-center
+									w-32
+									h-32
+									font-thin
+									shadow-lg
+								"
+								><span class="font-bold">$20</span>/site</span
+							>
+						</div>
+
+						<ul class="w-9/12 mx-auto">
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>Space</span>
+								<span>1GB</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>FTB User</span>
+								<span>10</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>Databases</span>
+								<span>0</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>Domain</span>
+								<span>none</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>24 Support</span>
+								<span>Yes</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>Custom Email</span>
+								<span>No</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>responsive</span>
+								<span>Yes</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>PWA</span>
+								<span>No</span>
+							</li>
+						</ul>
+
+						<div
+							class="w-full py-5 flex justify-center items-center"
+						>
+							<a
+								href="#"
+								class="
+									bg-red-600
+									text-white-1
+									rounded-md
+									px-24
+									py-4
+									font-bold
+								"
+								>Choose Plan</a
+							>
+						</div>
+					</div>
+
+					<!-- Management -->
+					<div
+						class="
+							bg-gray-100
+							dark:bg-black-0.4
+							dark:text-white-1
+							shadow-2xl
+							drop-shadow-xl
+							rounded-lg
+						"
+						data-aos="fade-right"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+					>
+						<div class="w-full py-5 flex flex-col items-center">
+							<h2
+								class="
+									text-3xl
+									uppercase
+									font-bold
+									text-gray-600
+								"
+							>
+								Management
+							</h2>
+							<p class="my-2 text-gray-400">
+								Persons-Companys-organizations
+							</p>
+
+							<span
+								class="
+									text-3xl
+									bg-red-600
+									text-white-1
+									rounded-full
+									flex
+									justify-center
+									items-center
+									w-32
+									h-32
+									font-thin
+									shadow-lg
+								"
+								><span class="font-bold">$99</span>/site</span
+							>
+						</div>
+
+						<ul class="w-9/12 mx-auto">
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>Space</span>
+								<span>10GB</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>FTB User</span>
+								<span>100</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>Databases</span>
+								<span>5</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>Domain</span>
+								<span>Yes</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>24 Support</span>
+								<span>Yes</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>Custom Email</span>
+								<span>Yes</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>responsive</span>
+								<span>Yes</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>PWA</span>
+								<span>Yes</span>
+							</li>
+						</ul>
+
+						<div
+							class="w-full py-5 flex justify-center items-center"
+						>
+							<a
+								href="#"
+								class="
+									bg-red-600
+									text-white-1
+									rounded-md
+									px-24
+									py-4
+									font-bold
+								"
+								>Choose Plan</a
+							>
+						</div>
+					</div>
+
+					<!-- e-commerce -->
+					<div
+						class="
+							bg-gray-100
+							dark:bg-black-0.4
+							dark:text-white-1
+							shadow-2xl
+							drop-shadow-xl
+							rounded-lg
+						"
+						data-aos="fade-right"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+					>
+						<div class="w-full py-5 flex flex-col items-center">
+							<h2
+								class="
+									text-3xl
+									uppercase
+									font-bold
+									text-gray-600
+								"
+							>
+								E-Commerce
+							</h2>
+							<p class="my-2 text-gray-400">
+								Persons-Companys-organizations
+							</p>
+
+							<span
+								class="
+									text-3xl
+									bg-red-600
+									text-white-1
+									rounded-full
+									flex
+									justify-center
+									items-center
+									w-32
+									h-32
+									font-thin
+									shadow-lg
+								"
+								><span class="font-bold">$199</span>/site</span
+							>
+						</div>
+
+						<ul class="w-9/12 mx-auto">
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>Space</span>
+								<span>100GB</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>FTB User</span>
+								<span>100</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>Databases</span>
+								<span>10</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>Domain</span>
+								<span>Yes</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>24 Support</span>
+								<span>Yes</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>Custom Email</span>
+								<span>Yes</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>responsive</span>
+								<span>Yes</span>
+							</li>
+
+							<li
+								class="
+									flex
+									justify-between
+									font-bold
+									text-gray-600
+								"
+							>
+								<span>PWA</span>
+								<span>Yes</span>
+							</li>
+						</ul>
+
+						<div
+							class="w-full py-5 flex justify-center items-center"
+						>
+							<a
+								href="#"
+								class="
+									bg-red-600
+									text-white-1
+									rounded-md
+									px-24
+									py-4
+									font-bold
+								"
+								>Choose Plan</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Last Posts -->
+		<section class="lats-posts my-20">
+			<div class="w-11/12 mx-auto overflow-hidden">
+				<!-- title -->
+				<div
+					class="title py-5 flex justify-center items-center relative"
+				>
+					<h2
+						class="
+							text-3xl
+							md:text-5xl
+							font-bold
+							tracking-wide
+							uppercase
+							relative
+							z-10
+							dark:text-white-1
+						"
+						data-aos="fade-left"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						Last Posts
 					</h2>
@@ -2348,6 +3117,12 @@
 							dark:text-black-0.3
 							uppercase
 						"
+						data-aos="fade-right"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 						>Axel</span
 					>
 				</div>
@@ -2361,8 +3136,15 @@
 							dark:text-white-1
 							shadow-2xl
 							drop-shadow-xl
-							rounded
+							rounded-md
+							overflow-hidden
 						"
+						data-aos="fade-right"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<img src="/assets/1.0f1445ca.jpg" alt="" />
 						<div class="space-y-4 p-5">
@@ -2398,8 +3180,15 @@
 							dark:text-white-1
 							shadow-2xl
 							drop-shadow-xl
-							rounded
+							rounded-md
+							overflow-hidden
 						"
+						data-aos="fade-up"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<img src="/assets/2.921f6fec.jpg" alt="" />
 						<div class="space-y-4 p-5">
@@ -2411,6 +3200,7 @@
 								I can make your secure & performant back-end
 								RESTful or GraphQL API in Node.js, Express and
 								MongoDB
+								<q>Learning</q>
 							</p>
 						</div>
 						<a
@@ -2436,8 +3226,15 @@
 							dark:text-white-1
 							shadow-2xl
 							drop-shadow-xl
-							rounded
+							rounded-md
+							overflow-hidden
 						"
+						data-aos="fade-left"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						<img src="/assets/3.c5362059.jpg" alt="" />
 						<div class="space-y-4 p-5">
@@ -2472,9 +3269,11 @@
 
 		<!-- Education-->
 		<section class="education my-20">
-			<div class="w-11/12 mx-auto">
+			<div class="w-11/12 mx-auto overflow-hidden">
 				<!-- title -->
-				<div class="title flex justify-center items-center relative">
+				<div
+					class="title py-5 flex justify-center items-center relative"
+				>
 					<h2
 						class="
 							text-3xl
@@ -2486,6 +3285,12 @@
 							z-10
 							dark:text-white-1
 						"
+						data-aos="fade-left"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 					>
 						Education
 					</h2>
@@ -2497,6 +3302,12 @@
 							dark:text-black-0.3
 							uppercase
 						"
+						data-aos="fade-right"
+						data-aos-delay="50"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
 						>Axel</span
 					>
 				</div>
@@ -2504,12 +3315,18 @@
 				<!-- content -->
 				<div
 					class="grid grid-cols-2 md:grid-cols-6 gap-3 gap-y-10 mt-16"
+					data-aos="fade-down"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+					data-aos-mirror="true"
+					data-aos-once="false"
 				>
 					<div>
 						<img
 							class="w-full object-cover rounded shadow-2xl"
-							src="https://scontent-hbe1-1.xx.fbcdn.net/v/t1.6435-9/132509471_10224403140924798_6950703696297783340_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Rni0NYb1V-cAX_GAy3P&_nc_ht=scontent-hbe1-1.xx&oh=234e97abd43b400ef3bd1c7f338a5d8e&oe=60B7AA02"
-							alt=""
+							src="/assets/elzero.6776f181.jpg"
+							alt="Elzero Web School"
 						/>
 						<a
 							href="https://www.youtube.com/user/OsamaElzero"
@@ -2529,8 +3346,8 @@
 					<div>
 						<img
 							class="w-full object-cover rounded shadow-2xl"
-							src="https://scontent-hbe1-1.xx.fbcdn.net/v/t1.6435-9/152706972_272461064236272_8336138885585205960_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=bKKw19_me-IAX-WyAPp&_nc_ht=scontent-hbe1-1.xx&oh=c52dfc7651dbead58b2bfac28768be0a&oe=60B782A5"
-							alt=""
+							src="/assets/nourhamse.5d0fcbec.jpg"
+							alt="Nour Homsi"
 						/>
 						<a
 							href="https://www.youtube.com/user/drnour"
@@ -2550,8 +3367,8 @@
 					<div>
 						<img
 							class="w-full object-cover rounded shadow-2xl"
-							src="https://scontent-hbe1-1.xx.fbcdn.net/v/t1.6435-9/93721149_2937331313013515_4405455613157441536_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=973b4a&_nc_ohc=ZHeSNFMal04AX8fSpTn&_nc_ht=scontent-hbe1-1.xx&oh=90cc0221f0012e44137f8e2769e44565&oe=60B6CE8A"
-							alt=""
+							src="/assets/semicolon.f3e13e96.jpg"
+							alt="SemiColon"
 						/>
 						<a
 							href="https://www.youtube.com/channel/UCuwTHYdMavwEPsZ6OAkXfig"
@@ -2571,8 +3388,8 @@
 					<div>
 						<img
 							class="w-full object-cover rounded shadow-2xl"
-							src="https://scontent-hbe1-1.xx.fbcdn.net/v/t1.6435-9/161504867_121348240000822_3597188960555955252_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_aid=0&_nc_ohc=M2qjExgMLygAX-vf-G9&_nc_ht=scontent-hbe1-1.xx&oh=79759f47ebe1e68514b64fa10ef7fc49&oe=60B70CCC"
-							alt=""
+							src="/assets/design course.8535354e.jpg"
+							alt="DesignCourse"
 						/>
 						<a
 							href="https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow"
@@ -2592,8 +3409,8 @@
 					<div>
 						<img
 							class="w-full object-cover rounded shadow-2xl"
-							src="https://pbs.twimg.com/profile_images/1379478790015967241/lnVy5ef1_400x400.jpg"
-							alt=""
+							src="/assets/codeS.adf19cdd.jpg"
+							alt="codeSTACKr"
 						/>
 						<a
 							href="https://www.youtube.com/channel/UCDCHcqyeQgJ-jVSd6VJkbCw"
@@ -2613,8 +3430,8 @@
 					<div>
 						<img
 							class="w-full object-cover rounded shadow-2xl"
-							src="https://pbs.twimg.com/profile_images/1177974076658221057/A2PPHR1n_400x400.jpg"
-							alt=""
+							src="/assets/fire.646bc5d2.jpg"
+							alt="Fireship"
 						/>
 						<a
 							href="https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA"
@@ -2634,8 +3451,8 @@
 					<div>
 						<img
 							class="w-full object-cover rounded shadow-2xl"
-							src="https://scontent-hbe1-1.xx.fbcdn.net/v/t1.18169-9/15621700_1314192591964696_4145978218586946858_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=973b4a&_nc_ohc=6A63uv93vUUAX--bw6D&_nc_ht=scontent-hbe1-1.xx&oh=1127b1fd8cdca2efa946ba74316dc4ea&oe=60B5BE9B"
-							alt=""
+							src="/assets/travel.34529fd2.jpg"
+							alt="Traversy Media"
 						/>
 						<a
 							href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA"
@@ -2655,8 +3472,8 @@
 					<div>
 						<img
 							class="w-full object-cover rounded shadow-2xl"
-							src="https://pbs.twimg.com/profile_images/1371172008457871360/vRZsFE07_400x400.jpg"
-							alt=""
+							src="/assets/dev ed.c6dea23f.jpg"
+							alt="Dev Ed"
 						/>
 						<a
 							href="https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q"
@@ -2676,8 +3493,8 @@
 					<div>
 						<img
 							class="w-full object-cover rounded shadow-2xl"
-							src="https://pbs.twimg.com/profile_images/1086003406488113153/XBSj69e5_400x400.jpg"
-							alt=""
+							src="/assets/web Dev.e866b36c.jpg"
+							alt="Web Dev Simplified"
 						/>
 						<a
 							href="https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw"
@@ -2697,8 +3514,8 @@
 					<div>
 						<img
 							class="w-full object-cover rounded shadow-2xl"
-							src="https://scontent-hbe1-1.xx.fbcdn.net/v/t1.6435-9/133090049_232633078222594_1700819959935291935_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=JhfHeFkmdmAAX8EIUQm&_nc_ht=scontent-hbe1-1.xx&oh=71037e7f8cedae07ae25f9cf7276501f&oe=60B5A4CF"
-							alt=""
+							src="/assets/ot.baf39705.jpg"
+							alt="Online Tutorials"
 						/>
 						<a
 							href="https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog"
@@ -2718,8 +3535,8 @@
 					<div>
 						<img
 							class="w-full object-cover rounded shadow-2xl"
-							src="https://scontent-hbe1-1.xx.fbcdn.net/v/t1.6435-9/109063664_1518062395032336_8416167147643515480_n.png?_nc_cat=109&ccb=1-3&_nc_sid=973b4a&_nc_ohc=yk-5AL1adnMAX8PKihf&_nc_oc=AQlQQuIu125D1TnfNUFuoT0nPw1k8Fh7h0vgbQ6a4-34uUwMbtl4FlIcem-tRAZKoDE&_nc_ht=scontent-hbe1-1.xx&oh=7e6d3235e1b2ecc5f2e9dd1e44927ac4&oe=60B842C5"
-							alt=""
+							src="/assets/net ninja.2f0e9dd8.png"
+							alt="The Net Ninja"
 						/>
 						<a
 							href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg"
@@ -2740,7 +3557,7 @@
 						<img
 							class="w-full object-cover rounded shadow-2xl"
 							src="https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/ikqra03zdnggljdu5vv0"
-							alt=""
+							alt="freeCodeCamp"
 						/>
 						<a
 							href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ"
@@ -2761,7 +3578,16 @@
 		</section>
 
 		<!-- footer -->
-		<footer class="bg-black-0.2 text-white-1 px-6 py-2 text-center">
+		<footer
+			class="
+				bg-gray-300
+				px-6
+				py-2
+				text-center
+				dark:bg-black-0.4
+				dark:text-white-1
+			"
+		>
 			<div class="text-2xl font-bold">
 				Axel<span class="text-red-700">4</span>Design
 			</div>

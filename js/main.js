@@ -31,7 +31,7 @@ const ScrolToTop = document.querySelector('#scroltotop');
 document.addEventListener('DOMContentLoaded', () => {
 	setTimeout(() => {
 		Loading.remove();
-	}, 2000);
+	}, 1000);
 });
 
 AOS.init({});
